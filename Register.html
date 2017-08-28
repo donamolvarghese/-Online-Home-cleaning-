@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Flat HTML5/CSS3 Login Form</title>
+
+
+
+        <link rel="stylesheet" href="css/style1.css">
+
+
+</head>
+
+<body>
+  <div class="login-page">
+  <div class="form">
+    <form name="myform" method="post"  action="#" onSumbit="return validate()">
+    <div id="3">
+    </div>
+    <div>
+       <h2>REGISTRATION FORM</h2>
+        <label><br><b>USERNAME:</b></br></label>
+        <input type="text" name="userid" required>
+    	<br>
+        <label><br><b>FIRST-NAME:</b></br></label>
+        <input type="text" name="uname" required>
+    	<br>
+      <br>
+        <label><br><b>LAST-NAME:</b></br></label>
+        <input type="text" name="uname" required>
+    	<br>
+    	<label><br><b>PASSWORD:</b></br></label>
+    	<input type="password" name="psw" required>
+    	<br>
+      <br>
+    	<label><br><b>CONFIRM PASSWORD:</b></br></label>
+    	<input type="password" name="psw" required>
+    	<br>
+    	<label><br><b>EMAIL:</b></br></label>
+    	<input type="email" name="email" required>
+    	<br>
+    	<label><br><b>ADDRESS:</b></br></label>
+    	<input type="textarea" name="address" required>
+     	</input>
+    	<br>
+    	<label><br><b>GENDER:</b></br></label>
+    	<input type="radio" name="gender"
+      <?php if (isset($gender) && $gender=="female")echo "checked";?>
+       <input type="radio" name="gender" value="female">Female
+      <?php if (isset($gender) && $gender=="male")echo "checked";?>
+      <input type="radio" name="gender" value="male">Male
+    	<br>
+      <br>
+    	<label><br><b>DOB:</b></br></label>
+    	<input type="text" name="dob" required>
+    	<br>
+      <br>
+    	<label><br><b>PHN NUMBER:</b></br></label>
+    	<input type="text" name="contact" required>
+    	<br>
+      <br>
+    	<label><br><b>CITY:</b></br></label>
+    	<input type="text" name="city" required>
+    	<br>
+      <br></br>
+    	<button>REGISTER</button>
+    </div></form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index1.js"></script>
+
+</body>
+</html>
